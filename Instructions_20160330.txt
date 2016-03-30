@@ -1,0 +1,36 @@
+Instructions 20160330
+
+Hi Pedro, thanks for your response. As you remember, we did not find any cases of the pattern I was looking for. I would like to know whether you could run the analysis in the subsample I have (file enclosed) but just focusing on the line”companies” (with the letters A, B, C) and line “changes” (1, 2, 3. Maybe this needs to be ran first for the line companies and then mixing both. 
+
+What I am primarily looking for in the company line is any sequence where you have at least 3 letters (A, B, C) and C in the middle. This means that the person worked both inside and outside the industry of the company he is CEO now. 
+
+As a reminder the coding is as follows: 
+
+Company dimension: 
+A: target corporation. This corresponds to the company where each
+individual is expected to become a CEO during 2000-2012, that is the
+companies in our Sample.
+
+B: corporation within the same industry. This corresponds to an
+individual belonging to a company in the same industry as the current
+corporation. To know if it belongs to the same industry, we need to refer
+to the four-digit primary sic code and first two digits need to be similar => see specific column
+
+C: corporation outside the industry. This corresponds to a company outside
+the industry as the current corporation. To know if it belongs to the same
+industry, we need to refer to the four-digit primary sic code and first two digits
+need to be different => see specific column
+
+
+
+Change Dimension
+you have 3 possible states: 
+1: no change in prior year. this applies if the executive stays in the same position for a certain number of years (e.g., senior president apple from 1992-1995)
+2: intra-corporation change in prior year. If the individual has a change within the company for which he is working, then this is the correct state. this applies if you notice a change in function but not in company. 
+3: change outside the company in prior year. this applies if you notice a change in companies Apple 92-95, Samsung 96…
+
+I remember that we had many discussions regarding how to calculate costs, please choose for the moment the options that you think are closer to the literature. 
+
+I am fully available in case you need something. 
+Best, 
+Paul 
